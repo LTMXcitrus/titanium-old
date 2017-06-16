@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { StocksComponent } from './stocks/stocks.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {MaterialModule} from "./material.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
