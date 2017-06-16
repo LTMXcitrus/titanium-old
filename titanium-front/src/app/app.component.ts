@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Stock} from "./model/stock";
+import {TitaniumService} from "./titanium.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private titaniumService: TitaniumService){}
+
+  stock: Stock;
+
+  enter(stockName: string){
+    this.titaniumService.getStock(stockName);
+  }
 }
