@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {MdButtonModule, MdCardModule, MdGridListModule, MdToolbarModule} from "@angular/material";
+import {MdButtonModule, MdCardModule, MdGridListModule, MdIconModule, MdToolbarModule} from "@angular/material";
 
 @NgModule({
   imports: [
@@ -8,13 +8,15 @@ import {MdButtonModule, MdCardModule, MdGridListModule, MdToolbarModule} from "@
     MdButtonModule,
     MdCardModule,
     MdGridListModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdIconModule
   ],
   exports: [
     MdButtonModule,
     MdCardModule,
     MdGridListModule,
-    MdToolbarModule
+    MdToolbarModule,
+    MdIconModule
   ],
   declarations: []
 })

@@ -1,5 +1,6 @@
 package com.titane.mot.model
 
-/**
- * Created by Matthieu on 18/06/2017.
- */
+import java.util.*
+
+
+data class Kit(val kitElements: HashMap<String, Equipment>)

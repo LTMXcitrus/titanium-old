@@ -15,6 +15,11 @@ export class AppComponent {
   stock: Stock;
 
   enter(stockName: string){
-    this.titaniumService.getStock(stockName);
+    //this.titaniumService.getStock(stockName);
+    this.stock = new Stock();
+  }
+
+  home(){
+    this.stock = null;
   }
 }

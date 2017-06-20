@@ -6,7 +6,7 @@ export class TitaniumService {
   constructor() {  }
 
   getStock(stockName){
-
+      
   }
 
 }

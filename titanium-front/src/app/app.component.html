@@ -1,5 +1,7 @@
 <md-toolbar color="primary">
-  <span>Titanium</span>
+  <button md-button (click)="home()"><md-icon>home</md-icon></button>
+  <span class="title">Titanium</span>
 </md-toolbar>
 
-<app-welcome (enterApp)="enter($event)"></app-welcome>
+<app-welcome *ngIf="!stock" (enterApp)="enter($event)"></app-welcome>
+<app-stocks *ngIf="stock" ></app-stocks>
