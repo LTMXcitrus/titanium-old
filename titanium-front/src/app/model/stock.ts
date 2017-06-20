@@ -1,4 +1,4 @@
-import {Pack} from "./pack";
+import {Pack} from "./kit";
 export class Stock {
-  hygiene: Array<Pack>;
+  hygiene: Array<Kit>;
 }

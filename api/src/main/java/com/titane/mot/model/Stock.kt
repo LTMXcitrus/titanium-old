@@ -2,4 +2,4 @@ package com.titane.mot.model
 
 import java.util.*
 
-data class Stock(val kits: HashMap<String, Kit>)
+data class Stock(val kits: List<Kit>)

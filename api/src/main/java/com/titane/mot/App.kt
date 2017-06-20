@@ -1,5 +1,13 @@
 package com.titane.mot
 
-/**
- * Created by Matthieu on 18/06/2017.
- */
+import com.titane.mot.mongo.Dao
+import io.vertx.core.AbstractVerticle
+import io.vertx.core.Future
+
+object App : AbstractVerticle() {
+
+    override fun start(startFuture: Future<Void>) {
+        val dao = Dao(vertx)
+    }
+
+}
