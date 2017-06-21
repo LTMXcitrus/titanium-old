@@ -34,4 +34,7 @@ class Dao(vertx: Vertx) {
         client.save(collection_name, JsonObject(mapper.writeValueAsString(stock)), { logInfo<Dao> { "$it"}})
     }
 
+    fun findOne(stockId: Stock){
+        
+    }
 }
